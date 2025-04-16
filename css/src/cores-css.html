@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores no CSS</title>
+    <style>
+        @charset "UTF-8";
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        .vermelho-nome {
+            color: red;
+        }
+
+        .vermelho-hex {
+            color: #ff0000;
+        }
+
+        .vermelho-rgb {
+            color: rgb(255, 0, 0);
+        }
+
+        .vermelho-hsl {
+            color: hsl(0, 100%, 50%);
+        }
+
+        .caixa {
+            background-color: lightblue;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formas de usar cores no CSS</h1>
+
+    <p class="vermelho-nome">Cor com nome: red</p>
+    <p class="vermelho-hex">Cor hexadecimal: #ff0000</p>
+    <p class="vermelho-hex">Cor RGB: rgb(255, 0, 0)</p>
+    <p class="vermelho-hex">Cor HSL: hsl(0, 100%, 50%)</p>
+
+    <div class="caixa">
+        Caixa com fundo colorido, borda azul e padding!
+    </div>
+</body>
+</html>
