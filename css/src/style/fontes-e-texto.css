@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.texto-padrao {
+    font-size: 18px;
+    color: #333;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.maiuscula {
+    text-transform: uppercase;
+}
+
+.espacamento {
+    letter-spacing: 3px;
+    line-height: 1.6;
+}
