@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+h1 {
+    color: darkblue;
+}
+
+.destaque {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#principal {
+    font-size: 24px;
+    color: darkgreen;
+}
+
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+}
