@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade em HTMl</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Site Acessível</h1>
+        <p>Este site foi feito pensando em todos os usuários.</p>
+    </header>
+
+    <main>
+        <h2>Imagem com descrição</h2>
+        <img src="https://imgs.search.brave.com/rNuH7fDSwkZSINMBgBN0M54n3lIMR3sCGAw0VuQKxSc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92ZXRl/eC52ZXQuYnIvYmxv/Zy93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MS8wMy9HYXRvLUxh/cmFuamEtY3VyaW9z/aWRhZGVzLXNvYnJl/LWVsZS05MzB4NTUw/LmpwZw" alt="Gato deitado em uma almofada" width="300">
+
+        <h2>Formulário acessível</h2>
+        <form aria-labelledby="titulo">
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="4" cols="40"></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Botão com descrição</h2>
+        <button aria-label="Abrir menu de navegação">☰</button>
+    </main>
+</body>
+</html>
