@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .bloco {
+            display: block;
+            background-color: #f8bbd0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .em-linha {
+            display: inline;
+            background-color: #c5cae9;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .bloco-em-linha {
+            display: inline-block;
+            background-color: #ffe0b2;
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+        }
+
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: block, inline-block e none </h1>
+    <div class="bloco">Elemento com display: block</div>
+    <span class="em-linha">inline 1</span>
+    <span class="em-linha">inline 2</span>
+
+    <div>
+        <div class="bloco-em-linha">inline-block 1</div>
+        <div class="bloco-em-linha">inline-block 2</div>
+    </div>
+
+    <div class="oculto">
+        Este conteúdo está oculto com display: none
+    </div>
+</body>
+</html>
