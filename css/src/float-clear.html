@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float e clear</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        .caixa {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            color: white;
+            margin: 10px;
+        }
+
+        .caixa-esquerda {
+            float: left;
+            background-color: #64b5f6;
+        }
+
+        .caixa-direita {
+            float: right;
+            background-color: #ba68c8;
+        }
+
+        .limpar {
+            clear: both;
+        }
+
+        .conteudo {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Float e clear</h1>
+
+    <div class="caixa-esquerda">Float: left</div>
+    <div class="caixa-direita">Float: right</div>
+
+    <div class="limpar"></div>
+
+    <div class="conteudo">
+        Este conteudo só aparece abaixo das caixas porque usamos <code>clear: both;</code>
+    </div>
+</body>
+</html>
