@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries - Responsividade</title>
+</head>
+    <style>
+        .container {
+            width: 800px;
+            margin: 50px auto;
+            background-color: lightblue;
+            padding: 20px;
+            font-family: Arial;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        @Media (max-width: 600px) {
+            .container {
+                width: 100%;
+                background-color: lightcoral;
+                padding: 10px;
+            }
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>Teste de Media Queries</h1>
+        <p>Reduza o tamanho da janela para ver as mudanças</p>
+    </div>
+</body>
+</html>
