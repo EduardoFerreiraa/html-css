@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index e Overflow</title>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #eee;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 12px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .box1 {
+            background-color: #3498db;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .box2 {
+            background-color: #e74c3c;
+            top: 120px;
+            left: 120px;
+            z-index: 2;
+        }
+
+        .container-overflow {
+            width: 250px;
+            height: 250px;
+            position: relative;
+            overflow: hidden; /* corta o que sair da área */
+            margin-top: 300px;
+            border-radius: 12px;
+            padding: 20px;
+            color: white;
+        }
+
+        .content {
+            text-align: left;
+            width: 400px;
+            height: 300px;
+            background: rgb(0, 0, 0, 0.2);
+            font-size: 18px;
+            padding: 20px;
+            overflow: auto; /* cria barra de rolagem */ 
+        }
+    </style>
+<body>
+    <div class="box box1"> Azul (z-1) </div>
+    <div class="box box2">Vermelho (z-2) </div>
+
+    <div class="container-overflow">
+        <div class="content">
+            <p>Conteúdo maior que a área visível, por isso aparece barra de rolagem dentro da caixa verde</p>
+            <p>Teste rolar para ver o conteúdo completo</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus hic quia quis quisquam aspernatur quae voluptate sunt adipisci maiores? Adipisci excepturi necessitatibus corrupti placeat. Incidunt voluptatum commodi suscipit molestias reprehenderit!</p>
+            <p>Vivamus euismod turpis nec enim ullamcorper cursus.</p>
+        </div>
+    </div>
+</body>
+</html>
