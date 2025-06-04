@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+</head>
+    <style>
+        .aviso {
+            position: relative;
+            padding: 20px 20px 20px 50px;
+            background-color: #f9f9a1;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        .aviso::before {
+            content: "👉";
+            position: absolute;
+            left: 15px;
+            transform: translate(-50%);
+            font-size: 24px;
+        }
+
+        .aviso::after {
+            content: " ✅";
+            font-style: italic;
+        }
+    </style>
+<body>
+    <div class="aviso">
+        Este é um aviso importante
+    </div>
+</body>
+</html>
